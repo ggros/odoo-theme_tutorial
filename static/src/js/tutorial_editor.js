@@ -1,11 +1,9 @@
-(function() {
-    'use strict';
-    var website = odoo.website;
-    website.odoo_website = {};
-
-    website.snippet.options.snippet_testimonial_options = website.snippet.Option.extend({
-        onFocus: function() {
-            alert("On focus!");
-        }
-    })
-})();
+odoo.define(function (require) {
+    var options = require('web_editor.snippets.options');
+    console.log(options);
+    options.registry.snippet_testimonial_options = options.Class.extend({
+        onFocus: function () {
+            alert("On focus!")
+        },
+    });
+});
