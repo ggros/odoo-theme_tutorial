@@ -8,5 +8,5 @@
       'views/layout.xml',
   ],
   'category': 'Theme/Creative',
-  'depends': ['website'],
+  'depends': ['website', 'website_theme_install',],
 }
