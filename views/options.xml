@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- The template will inherit the default snippet_options template 
+    adding our options after the background options (xpath expr attribute). 
+    To place your options in a particular order, inspect the snippet_options template 
+    from the website module and add your options before/after the desired position. -->
+    <template id="snippet_testimonial_opt" name="Snippet Testimonial Options" inherit_id="website.snippet_options">
+        <xpath expr="//div[@data-js='background']" position="after">
+            <div data-selector=".snippet_testimonial">                <!-- Options group -->
+                <div class="dropdown-submenu">
+                    <a href="#" class="dropdown-item">
+                    <i class="fa fa-eyedropper"></i>
+                    Your Option</a>
+                    <div class="dropdown-menu">                        <!-- Options list -->
+                        <a href="#" class="dropdown-item" data-select-class="opt_shadow">Shadow Images</a>
+                        <a href="#" class="dropdown-item" data-select-class="opt_grey_bg">Grey Bg</a>
+                        <a href="#" class="dropdown-item" data-select-class="">None</a>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>
