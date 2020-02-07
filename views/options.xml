@@ -6,7 +6,7 @@
     from the website module and add your options before/after the desired position. -->
     <template id="snippet_testimonial_opt" name="Snippet Testimonial Options" inherit_id="website.snippet_options">
         <xpath expr="//div[@data-js='background']" position="after">
-            <div data-selector=".snippet_testimonial">                <!-- Options group -->
+            <div data-js="snippet_testimonial_options" data-selector=".snippet_testimonial">                <!-- Options group -->
                 <div class="dropdown-submenu">
                     <a href="#" class="dropdown-item">
                     <i class="fa fa-eyedropper"></i>
